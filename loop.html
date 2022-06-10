@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loop</title>
+</head>
+<body>
+    <label for="">Table of</label>
+    <input type="text" id="tab">
+    <button type="submit" onclick="fun()">Enter</button>
+    <div id="demo"></div>
+    <br>
+    <br>
+    <script>
+        // Table of 11 from 10-1
+        var k=10;
+        while(k>=1){
+            document.write(11 + " * " + k + " = " + 11*k + "<br>");
+            k--;
+        }
+        // table of __ from __ to __
+        function fun(){
+            var tab=document.getElementById("tab").value;
+            var c = 1;
+            while(c<=tab){
+                document.write(tab + "*" + c + "=" + c*tab + "<br>");
+                c++;
+            }
+        }
+    </script>
+</body>
+</html>
